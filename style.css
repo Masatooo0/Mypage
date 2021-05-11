@@ -5,41 +5,27 @@
 }
 a {
   text-decoration: none;
-  color: #fafafa;
 }
-.fa{
+.fa {
   color: #000000;
 }
-
-header {
-  width: 100%;
+nav {
   height: 70px;
   background-color: #ec715f;
-  margin-bottom: 0px;
 }
 
-.top-container {
-  width: 1024px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+button {
+  width: 50px;
 }
 
 .navbar-brand img {
   margin: 0px;
   height: 70px;
+  width: auto;
 }
-
-.nav-list {
-  display: flex;
-  margin-right: 0;
-}
-.nav-item {
-  list-style: none;
-  margin: 0 30px;
-  line-height: 70px;
-  font-size: 16px;
-}
+.navbar-light .navbar-nav .nav-link {
+  color: #fafafa;
+} 
 
 main {
   width: 100%;
@@ -174,6 +160,7 @@ main {
   font-size: 16px;
   text-align: left;
 }
+/* ///////////////////// */
 .profile {
   background-color: #eceff1;
 }
@@ -191,52 +178,53 @@ main {
   width: 50%;
   text-align: center;
 }
-.left-content img{
+.left-content img {
   height: 250px;
+  width: auto;
   border-radius: 50%;
 }
 .right-content {
   width: 50%;
 }
-.right-content h3{
+.right-content h3 {
   font-size: 20px;
   margin-bottom: 5px;
 }
-.right-content p{
+.right-content p {
   font-size: 16px;
   color: #000000;
   margin-bottom: 20px;
 }
-.contact-container{
+.contact-container {
   width: 800px;
   padding: 90px 0;
   margin: 0 auto;
 }
-.info{
+.info {
   display: flex;
 }
-.right-content-content{
+.right-content-content {
   width: 180px;
   margin: 0 auto;
 }
-.left-content-content{
+.left-content-content {
   width: 130px;
   margin: 0 auto;
   text-align: left;
 }
-.left-content-content h3{
+.left-content-content h3 {
   font-size: 20px;
   margin-bottom: 5px;
 }
-.left-content-content p{
+.left-content-content p {
   margin-bottom: 20px;
 }
-.right-content-content h3{
+.right-content-content h3 {
   font-size: 20px;
 }
 
 .sns-list .fab:nth-child(1),
-.sns-list .fab:nth-child(2){
+.sns-list .fab:nth-child(2) {
   margin-right: 20px;
 }
 footer {
@@ -245,7 +233,130 @@ footer {
   text-align: center;
   line-height: 60px;
 }
-footer p{
+footer p {
   font-size: 16px;
-  color:#FAFAFA;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    margin: 0px;
+    height: 50px;
+    width: auto;
+  }
+  .main-visual {
+    width: 100%;
+    height: 650px;
+    background-image: url("img 2/code.png");
+    background-size: cover;
+    text-align: center;
+  }
+  .main-text h1 {
+    font-size: 40px;
+    color: #fafafa;
+  }
+  .main-text p {
+    font-size: 18px;
+    color: #fafafa;
+    margin-top: 10px;
+  }
+
+  .portfolio {
+    background-color: #eceff1;
+  }
+  .portfolio-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+  }
+
+  .p-img {
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px auto;
+  }
+
+  .img-list1 {
+    display: none;
+  }
+  .img-list3 {
+    display: none;
+  }
+  .img-list5 {
+    display: none;
+  }
+
+  .feature-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+  }
+
+  .content {
+    display: block;
+  }
+  .feature-list {
+    width: 320px;
+    margin: 15px auto;
+    text-align: center;
+  }
+  .feature-list:nth-child(1),
+  .feature-list:nth-child(3) {
+    margin: 0 auto;
+  }
+  .profile {
+    background-color: #eceff1;
+  }
+
+  .profile-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+  }
+
+  .introduce {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+  }
+  .left-content {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .right-content {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .contact-container {
+    width: 90%;
+    padding: 90px 0;
+    margin: 0 auto;
+  }
+  .info {
+    display: block;
+  }
+  .right-content-content,
+  .left-content-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sns-list {
+    width: ;
+    display: flex;
+  }
+
+  .sns-list .fab:nth-child(1),
+  .sns-list .fab:nth-child(2) {
+    margin-right: 8px;
+  }
 }
